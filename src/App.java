@@ -40,7 +40,7 @@ public class App {
     }
 
     public static void saveSVG() throws IOException{
-        SVGGraphics2D g2 = new SVGGraphics2D(2000, 2000);
+        SVGGraphics2D g2 = new SVGGraphics2D(1000, 1000);
         pen.getPadPanel().printAll(g2);
         File f = new File("img/gramaticimg.svg");
         SVGUtils.writeToSVG(f, g2.getSVGElement());
